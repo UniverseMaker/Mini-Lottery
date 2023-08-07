@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">미니의 추첨기</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">비회원</string>
+    <string name="nav_header_subtitle">Guest@MINIS_LOTTERY.com</string>
+    <string name="nav_header_desc">회원이미지</string>
+    <string name="action_settings">설정</string>
+</resources>

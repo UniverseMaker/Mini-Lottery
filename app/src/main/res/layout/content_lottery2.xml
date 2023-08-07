@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이름추첨"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이름추첨이란? 추첨명단을 통해 당첨자를 선정하며 경품할당 기능으로 다양한 추첨을 할 수 있습니다!"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/textView7" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="추첨설명"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/textView8" />
+
+    <EditText
+        android:id="@+id/txtLottery2Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="textPersonName"
+        android:textColorHint="#b3b3b3"
+        android:hint="추첨의 설명을 자세히 적어주세요"
+        android:background="@drawable/style_edittext_1"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        app:layout_constraintTop_toBottomOf="@id/textView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="추첨대상"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txtLottery2Description" />
+
+    <Button
+        android:id="@+id/btnLottery2GetMemberList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="추첨대상 불러오기"
+        android:theme="@style/AppTheme.Button.Red"
+        app:layout_constraintTop_toBottomOf="@id/textView5"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="당첨인원 혹은 경품목록"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnLottery2GetMemberList" />
+
+    <EditText
+        android:id="@+id/txtLottery2Wim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColorHint="#b3b3b3"
+        android:hint="총 추첨인원 중 당첨될 사람의수를 입력하세요"
+        android:background="@drawable/style_edittext_1"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        app:layout_constraintTop_toBottomOf="@id/textView6" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="OR"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/txtLottery2Wim" />
+
+    <Button
+        android:id="@+id/btnLottery2GetPrizeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="경품목록 불러오기"
+        android:theme="@style/AppTheme.Button.Red"
+        app:layout_constraintTop_toBottomOf="@id/textView10"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIP! 당첨인원 혹은 경품목록중 원하는것 한가지만 입력하면 됩니다"
+        app:layout_constraintTop_toBottomOf="@id/btnLottery2GetPrizeList" />
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIP! 추첨 설명을 자세히 적으면 나중에 추첨기록에서 손쉽게 기록을 다시 찾아보실 수 있습니다!"
+        app:layout_constraintBottom_toTopOf="@id/btnLottery2Start" />
+
+    <Button
+        android:id="@+id/btnLottery2Start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="추첨시작"
+        style="@style/Widget.AppCompat.Button.Colored"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

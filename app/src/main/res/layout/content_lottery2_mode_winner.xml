@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="당첨인원"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/txtLottery1Wim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColorHint="#b3b3b3"
+        android:hint="총 추첨인원 중 당첨될 사람의수를 입력하세요"
+        android:background="@drawable/style_edittext_1"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp" />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!-- android:icon="@drawable/ic_menu_share" -->
+        <item
+            android:id="@+id/nav_dashboard"
+            android:title="대시보드"
+            android:icon="@drawable/outline_dashboard_black_18dp"/>
+        <item
+            android:id="@+id/nav_record"
+            android:title="추첨기록"
+            android:icon="@drawable/outline_account_balance_black_18dp" />
+        <item
+            android:id="@+id/nav_notice"
+            android:title="공지사항"
+            android:icon="@drawable/outline_inbox_black_18dp" />
+    </group>
+
+    <item android:title="참여">
+        <menu>
+            <item
+                android:id="@+id/nav_lottery3join"
+                android:title="온라인추첨 참여"
+                android:icon="@drawable/outline_mail_black_18dp" />
+        </menu>
+    </item>
+
+    <item android:title="추첨">
+        <menu>
+            <item
+                android:id="@+id/nav_lottery1"
+                android:title="빠른추첨"
+                android:icon="@drawable/outline_person_black_18dp" />
+            <item
+                android:id="@+id/nav_lottery2"
+                android:title="이름추첨"
+                android:icon="@drawable/outline_people_black_18dp" />
+            <item
+                android:id="@+id/nav_lottery3"
+                android:title="온라인추첨"
+                android:icon="@drawable/outline_public_black_18dp" />
+        </menu>
+    </item>
+
+    <item android:title="관리">
+        <menu>
+            <item
+                android:id="@+id/nav_member"
+                android:title="명단관리"
+                android:icon="@drawable/outline_indeterminate_check_box_black_18dp" />
+            <item
+                android:id="@+id/nav_prize"
+                android:title="경품관리"
+                android:icon="@drawable/outline_cake_black_18dp" />
+            <item
+                android:id="@+id/nav_extract"
+                android:title="명단추출"
+                android:icon="@drawable/outline_party_mode_black_18dp" />
+        </menu>
+    </item>
+
+    <item android:title="정보">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:title="도움말"
+                android:icon="@drawable/outline_help_outline_black_18dp" />
+            <item
+                android:id="@+id/nav_information"
+                android:title="정보"
+                android:icon="@drawable/outline_info_black_18dp" />
+            <item
+                android:id="@+id/nav_settings"
+                android:title="설정"
+                android:icon="@drawable/outline_settings_black_18dp" />
+        </menu>
+    </item>
+
+</menu>

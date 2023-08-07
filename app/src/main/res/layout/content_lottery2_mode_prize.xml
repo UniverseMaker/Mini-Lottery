@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="경품목록"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnLottery2GetPrizeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="경품목록 불러오기"/>
+
+</LinearLayout>

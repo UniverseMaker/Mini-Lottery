@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "99787329230",
+    "firebase_url": "https://minis-lottery.firebaseio.com",
+    "project_id": "minis-lottery",
+    "storage_bucket": "minis-lottery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99787329230:android:51a88b620847295d",
+        "android_client_info": {
+          "package_name": "com.dspark.lottery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "99787329230-4pl7of6u0bl7pqq5frn1hmge92ansli0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFvg6iiwMs2YvpyIcoXH5EV99gXLhjkp0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/txtDetailLotteryViewer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="?"
+        android:textAlignment="center"
+        android:textSize="100dp"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/txtDetailLotteryViewer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="?"
+        android:textAlignment="center"
+        android:textSize="100dp"
+        android:maxLines="1"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtDetailLotteryInfol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="?"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/layout1"
+        app:layout_constraintBottom_toTopOf="@id/layoutLotteryWorkButtonSet"/>
+
+    <LinearLayout
+        android:id="@+id/layoutLotteryWorkButtonSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <Button
+        android:id="@+id/btnLotteryWorkGetWimRapid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="바로확인"
+        android:layout_weight="3"
+        android:theme="@style/AppTheme.Button.Red" />
+
+    <Button
+        android:id="@+id/btnLotteryWorkGetWim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="당첨자확인"
+        android:layout_weight="7"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <Button
+        android:id="@+id/btnLotteryWorkRecord"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="당첨기록으로 이동"
+        android:layout_weight="10"
+        android:visibility="gone"
+        android:theme="@style/AppTheme.Button.Blue" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
